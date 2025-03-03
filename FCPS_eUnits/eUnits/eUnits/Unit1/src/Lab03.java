@@ -2,17 +2,11 @@ import edu.fcps.karel2.Display;
 import edu.fcps.karel2.Robot;
 
 public class Lab03 {
-
-	/**
-	 * @param args
-	 */
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
 		Display.openWorld("C://maps/mountain.map");
       Display.setSpeed(10);
       
-		climber karel = new climber();
+		Climber karel = new Climber(8);
       
       karel.turnRight();
       karel.move();

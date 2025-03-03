@@ -1,6 +1,3 @@
-  	//Torbert, e-mail: smtorbert@fcps.edu
-	//version 4.22.2003
-
    import edu.fcps.karel2.Display;
    import javax.swing.JOptionPane;
     public class Lab07
@@ -12,7 +9,7 @@
          String avenue = JOptionPane.showInputDialog("What x-coordinate?");
          int x = Integer.parseInt(avenue);
       
-         Display.openWorld("maps/"+filename+".map");
+         Display.openWorld("C://maps/"+filename+".map");
          Display.setSize(17, 15);
          Display.setSpeed(10);
       

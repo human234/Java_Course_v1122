@@ -14,8 +14,6 @@ public class Lab04 {
       }
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
 		Display.openWorld("C://maps/arena.map");
       Display.setSpeed(10);
       

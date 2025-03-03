@@ -1,27 +1,45 @@
 import edu.fcps.karel2.Display;
 
-public class Racer extends Athlete{
+public class BoxTopRacer extends Racer{
    
-   public Racer(int y){
-      super(1, y, Display.EAST, Display.INFINITY);
+   public BoxTopRacer(int y){
+      super(y);
    }
    
    public void jumpRight(){
       turnLeft();
-      move();
+      int k = 0;
+      while(!rightIsClear()){
+         move();
+         k++;
+      }
       turnRight();
       move();
+      while(!rightIsClear()){
+         move();
+      }
       turnRight();
-      move();
+      for(int i = 0; i < k; i++){
+          move();
+      }
       turnLeft();
    }
    public void jumpLeft(){
       turnRight();
-      move();
+      int k = 0;
+      while(!leftIsClear()){
+         move();
+         k++;
+      }
       turnLeft();
       move();
+      while(!leftIsClear()){
+         move();
+      }
       turnLeft();;
-      move();
+      for(int i = 0; i < k; i++){
+          move();
+      }
       turnRight();
    }
    
