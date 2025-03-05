@@ -10,16 +10,11 @@ public class Lab09 {
 
       String filename = JOptionPane.showInputDialog("What robot world?");
       Display.openWorld("C://maps/"+filename+".map");
-      Display.setSpeed(2000000000);
+      Display.setSpeed(10);
       Athlete oblivionis = new Athlete(1, 1, Display.EAST, 0);
       
       int reg = 0;
-      while(oblivionis.nextToABeeper()){
-            oblivionis.pickBeeper();
-            reg++;
-         }
       for(int i = 0; i < 10; i++){
-         oblivionis.move();
          while(oblivionis.nextToABeeper()){
             oblivionis.pickBeeper();
          }
@@ -27,6 +22,7 @@ public class Lab09 {
             oblivionis.putBeeper();
             reg--;
          }
+         oblivionis.move();
          reg = oblivionis.getBeepers();
       }
    }
