@@ -2,7 +2,7 @@ import edu.fcps.karel2.Display;
 import edu.fcps.karel2.Robot;
 import javax.swing.JOptionPane;
 
-public class Lab09 {
+public class Lab10 {
 
 
 	public static void main(String[] args) {
@@ -11,19 +11,21 @@ public class Lab09 {
       String filename = JOptionPane.showInputDialog("What robot world?");
       Display.openWorld("C:/Users/ptr93/OneDrive/Documents/GitHub/Java_Course_v1122/FCPS_eUnits/eUnits/eUnits/Unit1/maps/"+filename+".map");
       Display.setSpeed(10);
-      Athlete oblivionis = new Athlete(1, 1, Display.EAST, 0);
+      Athlete oblivionis = new Athlete();
       
-      int reg = 0;
-      for(int i = 0; i < 10; i++){
-         while(oblivionis.nextToABeeper()){
-            oblivionis.pickBeeper();
+      while(!oblivionis.nextToABeeper()){
+         oblivionis.turnRight();
+         if(oblivionis.frontIsClear()){
+            oblivionis.move();
+            continue;
          }
-         while(reg != 0){
-            oblivionis.putBeeper();
-            reg--;
+         for(int i = 0; i < 3; i++){
+            oblivionis.turnLeft();
+            if(oblivionis.frontIsClear()){
+               oblivionis.move();
+               break;
+            }
          }
-         oblivionis.move();
-         reg = oblivionis.getBeepers();
       }
    }
 }
