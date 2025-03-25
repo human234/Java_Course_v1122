@@ -9,7 +9,7 @@
        public static void main(String[] args)
       {
          String filename = JOptionPane.showInputDialog("What robot world?");
-         Display.openWorld("maps/"+filename+".map");
+         Display.openWorld("C:/Users/ptr93/OneDrive/Documents/GitHub/Java_Course_v1122/FCPS_eUnits/eUnits/eUnits/Unit1/maps/"+filename+".map");
          Display.setSize(8, 8);
          Display.setSpeed(10);
       
