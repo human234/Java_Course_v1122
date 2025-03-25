@@ -9,7 +9,7 @@ public class Lab10 {
 		// TODO Auto-generated method stub
 
       String filename = JOptionPane.showInputDialog("What robot world?");
-      Display.openWorld("C:/Users/ptr93/OneDrive/Documents/GitHub/Java_Course_v1122/FCPS_eUnits/eUnits/eUnits/Unit1/maps/"+filename+".map");
+      Display.openWorld("maps/"+filename+".map");
       Display.setSpeed(10);
       Athlete oblivionis = new Athlete();
       

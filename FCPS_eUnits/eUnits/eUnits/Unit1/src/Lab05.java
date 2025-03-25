@@ -3,7 +3,7 @@ import edu.fcps.karel2.Robot;
 
 public class Lab05 {
    public static void main(String[] args) {
-		Display.openWorld("C://maps/shuttle.map");
+	  Display.openWorld("maps/shuttle.map");
       Display.setSpeed(2000000000);
       
       Racer human1 = new Racer(1);

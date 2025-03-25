@@ -3,10 +3,10 @@ import edu.fcps.karel2.Robot;
 
 public class Lab02 {
 	public static void main(String[] args) {
-		Display.openWorld("C://maps/maze.map");
+	  Display.openWorld("maps/maze.map");
       Display.setSpeed(10);
       
-		Athlete karel = new Athlete();
+	  Athlete karel = new Athlete();
       
       karel.putBeeper();
       karel.move();

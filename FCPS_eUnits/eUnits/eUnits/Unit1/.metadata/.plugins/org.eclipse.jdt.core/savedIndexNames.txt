@@ -1,0 +1,4 @@
+INDEX VERSION 1.134+C:\Users\ptr93\OneDrive\Documents\GitHub\Java_Course_v1122\FCPS_eUnits\eUnits\eUnits\Unit1\.metadata\.plugins\org.eclipse.jdt.core
+1865797976.index
+1375831279.index
+1067094681.index

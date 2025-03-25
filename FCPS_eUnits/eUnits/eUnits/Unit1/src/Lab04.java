@@ -14,7 +14,7 @@ public class Lab04 {
       }
 
 	public static void main(String[] args) {
-		Display.openWorld("C://maps/arena.map");
+	  Display.openWorld("maps/arena.map");
       Display.setSpeed(10);
       
       Athlete human1 = new Athlete();

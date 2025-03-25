@@ -16,7 +16,7 @@ public class Lab08{
         String filename = JOptionPane.showInputDialog("What robot world?");
         String type = JOptionPane.showInputDialog("What type of racer?");
       
-        Display.openWorld("C:/Users/ptr93/OneDrive/Documents/GitHub/Java_Course_v1122/FCPS_eUnits/eUnits/eUnits/Unit1/maps/"+filename+".map");
+        Display.openWorld("maps/"+filename+".map");
         Display.setSize(18, 16);
         Display.setSpeed(10);
       

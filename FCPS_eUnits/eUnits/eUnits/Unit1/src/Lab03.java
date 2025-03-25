@@ -3,10 +3,10 @@ import edu.fcps.karel2.Robot;
 
 public class Lab03 {
 	public static void main(String[] args) {
-		Display.openWorld("C://maps/mountain.map");
+	  Display.openWorld("maps/mountain.map");
       Display.setSpeed(10);
       
-		Climber karel = new Climber(8);
+	  Climber karel = new Climber(8);
       
       karel.turnRight();
       karel.move();

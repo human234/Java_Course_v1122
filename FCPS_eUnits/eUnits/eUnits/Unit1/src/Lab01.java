@@ -4,10 +4,10 @@ import edu.fcps.karel2.Robot;
 
 public class Lab01 {
 	public static void main(String[] args) {
-		Display.openWorld("C://maps/school.map");
+	  Display.openWorld("maps/school.map");
       Display.setSpeed(10);
       
-		Robot karel = new Robot(), pete = new Robot(4,5,3,0);    
+	  Robot karel = new Robot(), pete = new Robot(4,5,3,0);    
       
       karel.move();
       karel.move();
