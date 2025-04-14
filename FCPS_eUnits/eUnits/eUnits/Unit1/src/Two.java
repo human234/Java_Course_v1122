@@ -1,6 +1,6 @@
 import edu.fcps.Digit;
 
-public class Two extends Digit {
+public class Two extends Digit implements Runnable{
 	public Two(int x, int y) {
 		super(x, y);
 	}
@@ -13,6 +13,10 @@ public class Two extends Digit {
 		segment5_On();
 		segment6_Off();
 		segment7_On();
+	}
+	
+	public void run() {
+		display();
 	}
 
 }

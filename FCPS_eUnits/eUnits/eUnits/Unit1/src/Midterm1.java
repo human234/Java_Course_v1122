@@ -6,15 +6,22 @@ public class Midterm1 {
 		Display.openDefaultWorld();
 		Display.setSpeed(10);
 		Display.setSize(36, 37);
-		BigE e1 = new BigE(1, 9), e2 = new BigE(8, 9);
-		HorizontalLeverage hl = new HorizontalLeverage(15, 9);
-		One o1 = new One(22, 9);
-		Six s1 = new Six(29, 9);
-		new Thread(e1).start();
-		new Thread(e2).start();
-		new Thread(hl).start();
-		new Thread(o1).start();
+		
+		Two tw1 = new Two(6, 21);
+		SpecialC c1 = new SpecialC(12, 21);
+		Three t1 = new Three(18, 21), t2 = new Three(23, 21);
+		SpecialSix s1 = new SpecialSix(6, 10);
+		SpecialOne so1 = new SpecialOne(12,10);
+		HorizontalLeverage h1 = new HorizontalLeverage(18, 10);
+
+
+		new Thread(tw1).start();
+		new Thread(c1).start();
+		new Thread(t1).start();
+		new Thread(t2).start();
 		new Thread(s1).start();
+		new Thread(so1).start();
+		new Thread(h1).start();
 
 	}
 

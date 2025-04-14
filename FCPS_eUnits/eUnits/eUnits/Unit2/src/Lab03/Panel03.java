@@ -40,7 +40,7 @@ public class Panel03 extends JPanel {
          int x = N / 2, y = N / 2; //center
          int x1, y1;							//endpoint for each ray
          double size = N / 4;					//length of each ray
-         int r1 = (int) (N * 0.15), r2 = (int) (N * 0.13);			//radius of the sun
+         int r1 = (int) (N * 0.12), r2 = (int) (N * 0.11);			//radius of the sun
       
          for(int i = 0; i < 6; i++) {
         	 int DP_cos = (int) (size * Math.cos(2 * Math.PI / 12 * i)), DP_sin = (int) (size * Math.sin(2 * Math.PI / 12 * i));
