@@ -3,9 +3,12 @@
     <fullyQualifiedTypeName name="edu.fcps.karel2.Display"/>
     <fullyQualifiedTypeName name="edu.fcps.Digit"/>
     <fullyQualifiedTypeName name="edu.fcps.karel2.Robot"/>
-    <fullyQualifiedTypeName name="javax.swing.JFrame"/>
     <fullyQualifiedTypeName name="Lab00.Panel00"/>
-    <fullyQualifiedTypeName name="java.lang.Math"/>
     <fullyQualifiedTypeName name="javax.swing.JOptionPane"/>
     <fullyQualifiedTypeName name="edu.fcps.Bucket"/>
+    <fullyQualifiedTypeName name="java.lang.Math"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="Lab06.TurtlePanel"/>
+    <fullyQualifiedTypeName name="javax.swing.JFrame"/>
+    <fullyQualifiedTypeName name="edu.fcps.Turtle"/>
 </qualifiedTypeNameHistroy>

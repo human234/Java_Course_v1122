@@ -1,28 +1,26 @@
-	//Name______________________________ Date_____________
-   import edu.fcps.Turtle;
-   import java.awt.Color;
-   import javax.swing.*;
-   public class Driver07
-   {
-      public static void main(String[] args)
-      {
-         JFrame frame = new JFrame("Polygon Turtles");
-         frame.setSize(400, 400);
-         frame.setLocation(200, 100);
-         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-         frame.setContentPane(new TurtlePanel());
-         frame.setVisible(true);
-      
-         PolygonTurtle smidge = new PolygonTurtle(100.0, 3);
-         smidge.setColor(Color.BLUE);
-         smidge.setThickness(6);
-         smidge.drawShape();
-      
-         /************************/
-      	/*                      */
-      	/* Your code goes here. */
-      	/*                      */
-      	/************************/
-      
-      }
-   }
+package Lab07;
+
+//Name______________________________ Date_____________
+import java.awt.Color;
+import edu.fcps.Turtle;
+
+public class Driver07 {
+	public static void main(String[] args) {
+		Turtle.createFrame();
+		PolygonTurtle smidge = new PolygonTurtle(60.0, 3), image = new PolygonTurtle(60.0, 4),
+					  bridge = new PolygonTurtle(60.0, 5), page = new PolygonTurtle(60.0, 6);
+		smidge.setColor(Color.BLUE);
+		smidge.setThickness(6);
+		smidge.drawShape();
+		image.setColor(Color.BLUE);
+		image.setThickness(6);
+		image.drawShape();
+		bridge.setColor(Color.BLUE);
+		bridge.setThickness(6);
+		bridge.drawShape();
+		page.setColor(Color.BLUE);
+		page.setThickness(6);
+		page.drawShape();
+
+	}
+}
