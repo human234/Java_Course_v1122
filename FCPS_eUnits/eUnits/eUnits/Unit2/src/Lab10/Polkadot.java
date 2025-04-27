@@ -1,10 +1,11 @@
 package Lab10;
 
-import java.awt.*;
+import java.awt.Color;
+import java.awt.Graphics;
 
 public class Polkadot {
 	private double myX; // x and y coordinates of center
-	private double myY; 
+	private double myY;
 	private double myDiameter;
 	private Color myColor;
 	private double myRadius;

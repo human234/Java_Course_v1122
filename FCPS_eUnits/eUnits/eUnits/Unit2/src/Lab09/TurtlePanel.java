@@ -1,12 +1,16 @@
 package Lab09;
 //Torbert, e-mail: mr@torbert.com, website: www.mr.torbert.com
 
+import java.awt.Graphics;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.JPanel;
+import javax.swing.Timer;
+
 //version 6.17.2003
 
 import edu.fcps.Turtle;
-import javax.swing.*;
-import java.awt.*;
-import java.awt.event.*;
 
 public class TurtlePanel extends JPanel {
 	public TurtlePanel() {

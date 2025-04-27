@@ -1,9 +1,13 @@
 package Lab10;
 
-import javax.swing.*;
-import java.awt.*;
-import java.awt.event.*;
-import java.awt.image.*;
+import java.awt.Color;
+import java.awt.Graphics;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.image.BufferedImage;
+
+import javax.swing.JPanel;
+import javax.swing.Timer;
 
 public class PolkaDotPanel extends JPanel {
 	// constants
@@ -13,7 +17,7 @@ public class PolkaDotPanel extends JPanel {
 	private BufferedImage myImage;
 	private Graphics myBuffer;
 	private Timer t;
-	private Polkadot pd;
+	private Polkadot pd, bd;
 	private int xPos, yPos;
 
 	public PolkaDotPanel() {
@@ -22,6 +26,8 @@ public class PolkaDotPanel extends JPanel {
 		myBuffer.setColor(BACKGROUND);
 		myBuffer.fillRect(0, 0, FRAME, FRAME);
 		pd = new Polkadot();
+		bd = new Polkadot();
+		bd.setColor(Color.blue);
 		t = new Timer(1000, new Listener());
 		t.start();
 	}
@@ -32,9 +38,10 @@ public class PolkaDotPanel extends JPanel {
 
 	private class Listener implements ActionListener {
 		public void actionPerformed(ActionEvent e) {
-			/**************************
-			 * your code goes here
-			 **************************/
+			myBuffer.setColor(Color.white);
+			myBuffer.fillRect(0, 0, FRAME, FRAME);
+			bd.jump(FRAME, FRAME);
+			bd.draw(myBuffer);
 			pd.jump(FRAME, FRAME);
 			pd.draw(myBuffer);
 

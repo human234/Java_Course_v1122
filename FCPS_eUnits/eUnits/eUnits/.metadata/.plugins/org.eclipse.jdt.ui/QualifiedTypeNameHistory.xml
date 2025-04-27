@@ -11,4 +11,5 @@
     <fullyQualifiedTypeName name="Lab06.TurtlePanel"/>
     <fullyQualifiedTypeName name="javax.swing.JFrame"/>
     <fullyQualifiedTypeName name="edu.fcps.Turtle"/>
+    <fullyQualifiedTypeName name="java.awt.Color"/>
 </qualifiedTypeNameHistroy>
